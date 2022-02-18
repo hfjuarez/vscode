@@ -1,0 +1,86 @@
+{
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.colorCustomizations": {
+        // "titleBar.activeBackground": "#1B2229",
+        // "titleBar.inactiveBackground": "#1B2229",
+        "titleBar.activeBackground": "#191919",
+        "titleBar.inactiveBackground": "#191919",
+    },
+    "window.titleBarStyle": "custom",
+    "vscode_custom_css.imports": [
+        "file:///Users/kyloren/projects/others/vscode.css",
+        "file:///Users/kyloren/projects/others/vscode.js"
+    ],
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.cwd": "/Users/kyloren/projects",
+    "workbench.editor.showIcons": false,
+    //VIM CONFIG
+
+	"vim.cursorStylePerMode.insert": "line-thin",
+	"vim.cursorStylePerMode.replace": "underline-thin",
+	"vim.easymotionMarkerBackgroundColor": "#EEB32D",
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["p"],
+			"after": ["p", "gv", "y", "<Esc>"]
+		}
+	],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+		{
+            "before": ["<Tab>"],
+			"after": ["i", "<C-t>", "<Esc>"]
+		},
+		{
+			"before": ["<leader>", "<S-Tab>"],
+			"after": ["i", "<C-d>", "<Esc>"]
+		},
+		{
+			"before": ["<leader>", "w"],
+			"commands": [":w"]
+		},
+		{
+			"before": ["<leader>", "q"],
+			"commands": [":q"]
+		},
+		{
+			"before": ["<leader>", "o"],
+			"after": ["o", "<Esc>"]
+		},
+		{
+			"before": ["<leader>", "O"],
+			"after": ["O", "<Esc>"]
+		}
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "editor.lineNumbers": "relative",
+   "editor.fontSize": 13,
+    "editor.letterSpacing": 1,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "JetBrains Mono, monospace",
+    "files.autoSave": "onWindowChange",
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false
+}
