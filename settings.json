@@ -92,11 +92,13 @@
         ".monaco-workbench .part.panel": "border-radius: 6px !important; margin-top: 10px !important; height: calc(100% - 10px) !important; width: calc(100% - 10px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;",
         "#workbench.parts.editor > .content": "border-bottom-left-radius: 6px !important;", ".monaco-workbench .part.panel.bottom .composite.title": "border-top-color: rgba(128, 128, 128, 0) !important;",
         ".parts.editor > div.content > div.grid-view-container > div > div > div > div.split-view-container > div": "width: calc(100% - 10px) !important;",
-        ".part.editor.has-watermark": "height: calc(100% - 10px) !important; margin-top: 10px !important; border-radius: 6px !important; width: calc(100% - 10px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;" 
+        ".part.editor.has-watermark": "height: calc(100% - 10px) !important; margin-top: 10px !important;margin-left: 10px !important; border-radius: 6px !important; width: calc(100% - 20px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;" 
     },
     "terminal.integrated.gpuAcceleration": "off",
     "workbench.colorTheme": "Monokai Pro",
     "customizeUI.titleBar": "inline",
     "customizeUI.moveStatusbar":true,
-    "vscode_vibrancy.theme": "Dark (Only Subbar)"
+    "vscode_vibrancy.theme": "Dark (Only Subbar)",
+    // "vscode_vibrancy.theme": "Light (Only Subbar)",
+    "vscode_vibrancy.opacity": 0.1
 }

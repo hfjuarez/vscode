@@ -44,6 +44,7 @@
   outline-width: 0px !important;
 }
 */
+
 .tabs-container > .tab.active{ 
   z-index: 1;
   border-top: 0px !important;
