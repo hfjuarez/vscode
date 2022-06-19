@@ -44,7 +44,7 @@
   outline-width: 0px !important;
 }
 */
-
+/* 
 .tabs-container > .tab.active{ 
   z-index: 1;
   border-top: 0px !important;
@@ -67,13 +67,13 @@
 }
 .tabs-and-actions-container {
   /* height: 34px !important; */
-}
+/* }
 .monaco-list:focus .selected{
-  width: calc(100% - 12px) !important;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+  /* width: calc(100% - 12px) !important; */
+  /* margin-left: 0px !important; */
+  /* margin-right: 0px !important; */
   /* border-radius: 6px !important; */
-  background-color: transparent !important;
+  /* background-color: transparent !important;
   outline: none !important;
 }
 .monaco-list-row {
@@ -129,12 +129,12 @@ height: 0px !important;
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-bottom>.tab-border-bottom-container,
 .monaco-workbench .part.editor > .content .editor-group-container.active > .title .tabs-container > .tab > .tab-border-bottom-container {
 height: 2px !important;
-}
+}  */
 
 /* .activitybar {
   padding-top: 25px !important;
 } */
-.part.sidebar.left .composite.title .title-actions .monaco-toolbar .monaco-action-bar.animated .actions-container {
+/* .part.sidebar.left .composite.title .title-actions .monaco-toolbar .monaco-action-bar.animated .actions-container {
   display: none;
 }
 .editor-actions {
@@ -144,4 +144,4 @@ height: 2px !important;
 .part.statusbar.status-border-top{
 --status-border-top-color: transparent !important;
 /* background-color: #2E2A2E !important; */
-}
+/* }  */

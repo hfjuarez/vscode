@@ -1,104 +1,113 @@
 {
-    "workbench.iconTheme": "Monokai Pro Icons",
-    "workbench.colorCustomizations": {
-        // "titleBar.activeBackground": "#1B2229",
-        // "titleBar.inactiveBackground": "#1B2229",
-        "titleBar.activeBackground": "#191919",
-        "titleBar.inactiveBackground": "#191919",
-    },
-    "window.titleBarStyle": "native",
-    "vscode_custom_css.imports": [
-        "file:///Users/kyloren/Library/Application Support/Code/User/vscode.css"
-    ],
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.cwd": "/Users/kyloren/projects",
-    "workbench.editor.showIcons": false,
-    //VIM CONFIG
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.colorCustomizations": {
+    // "titleBar.activeBackground": "#1B2229",
+    // "titleBar.inactiveBackground": "#1B2229",
+    // "titleBar.activeBackground": "#191919",
+    // "titleBar.inactiveBackground": "#191919",
+  },
+  "window.titleBarStyle": "native",
+  "vscode_custom_css.imports": [
+    "file:///Users/kyloren/Library/Application Support/Code/User/vscode.css"
+  ],
+  "terminal.external.osxExec": "iTerm.app",
+  "workbench.editor.showIcons": false,
+  //VIM CONFIG
 
-	"vim.cursorStylePerMode.insert": "line-thin",
-	"vim.cursorStylePerMode.replace": "underline-thin",
-	"vim.easymotionMarkerBackgroundColor": "#EEB32D",
-	"vim.visualModeKeyBindings": [
-		{
-			"before": ["p"],
-			"after": ["p", "gv", "y", "<Esc>"]
-		}
-	],
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "vim.insertModeKeyBindings": [
-        {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["<C-n>"],
-            "commands": [":nohl"]
-        },
-		{
-            "before": ["<Tab>"],
-			"after": ["i", "<C-t>", "<Esc>"]
-		},
-		{
-			"before": ["<leader>", "<S-Tab>"],
-			"after": ["i", "<C-d>", "<Esc>"]
-		},
-		{
-			"before": ["<leader>", "w"],
-			"commands": [":w"]
-		},
-		{
-			"before": ["<leader>", "q"],
-			"commands": [":q"]
-		},
-		{
-			"before": ["<leader>", "o"],
-			"after": ["o", "<Esc>"]
-		},
-		{
-			"before": ["<leader>", "O"],
-			"after": ["O", "<Esc>"]
-		}
-    ],
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
+  "vim.cursorStylePerMode.insert": "line-thin",
+  "vim.cursorStylePerMode.replace": "underline-thin",
+  "vim.easymotionMarkerBackgroundColor": "#EEB32D",
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["p"],
+      "after": ["p", "gv", "y", "<Esc>"]
+    }
+  ],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
     },
-    "editor.lineNumbers": "relative",
-   "editor.fontSize": 13,
-    "editor.letterSpacing": 1,
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "JetBrains Mono, monospace",
-    "files.autoSave": "onWindowChange",
-    "workbench.editor.untitled.hint": "hidden",
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "editor.minimap.enabled": false,
-    "workbench.activityBar.visible": false,
-    "breadcrumbs.enabled": false,
+    {
+      "before": ["<Tab>"],
+      "after": ["i", "<C-t>", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "<S-Tab>"],
+      "after": ["i", "<C-d>", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "O"],
+      "after": ["O", "<Esc>"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "editor.lineNumbers": "relative",
+  "editor.fontSize": 13,
+  "editor.letterSpacing": 1,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrains Mono, monospace",
+  "files.autoSave": "onWindowChange",
+  "workbench.editor.untitled.hint": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
 
-    "customizeUI.stylesheet": {
-        "body.inline-title-bar .monaco-workbench:not(.fullscreen) .sidebar .composite.title": "background: rgba(0, 0, 0, 0) !important;",
-        ".statusbar-item.left.has-background-color.first-visible-item": "background-color: rgba(37, 37, 38, 0) !important;",
-        ".monaco-workbench .part > .title": "background: rgba(0, 0, 0, 0) !important;",
-        "body.inline-title-bar:not(.activity-bar-at-bottom) .monaco-workbench:not(.fullscreen) .activitybar:not(.right) .activity-bar-placeholder": "background: rgba(0, 0, 0, 0) !important;",
-        ".monaco-list .monaco-list-row": "border-radius: 6px !important;", ".part.statusbar": "background-color: rgba(37, 37, 38, 0) !important;",
-        ".monaco-workbench .part.panel": "border-radius: 6px !important; margin-top: 10px !important; height: calc(100% - 10px) !important; width: calc(100% - 10px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;",
-        "#workbench.parts.editor > .content": "border-bottom-left-radius: 6px !important;", ".monaco-workbench .part.panel.bottom .composite.title": "border-top-color: rgba(128, 128, 128, 0) !important;",
-        ".parts.editor > div.content > div.grid-view-container > div > div > div > div.split-view-container > div": "width: calc(100% - 10px) !important;",
-        ".part.editor.has-watermark": "height: calc(100% - 10px) !important; margin-top: 10px !important;margin-left: 10px !important; border-radius: 6px !important; width: calc(100% - 20px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;" 
-    },
-    "terminal.integrated.gpuAcceleration": "off",
-    "workbench.colorTheme": "Monokai Pro",
-    "customizeUI.titleBar": "inline",
-    "customizeUI.moveStatusbar":true,
-    "vscode_vibrancy.theme": "Dark (Only Subbar)",
-    // "vscode_vibrancy.theme": "Light (Only Subbar)",
-    "vscode_vibrancy.opacity": 0.1
+  "customizeUI.stylesheet": {
+    // "body.inline-title-bar .monaco-workbench:not(.fullscreen) .sidebar .composite.title": "background: rgba(0, 0, 0, 0) !important;",
+    // ".statusbar-item.left.has-background-color.first-visible-item": "background-color: rgba(37, 37, 38, 0) !important;",
+    // ".monaco-workbench .part > .title": "background: rgba(0, 0, 0, 0) !important;",
+    // "body.inline-title-bar:not(.activity-bar-at-bottom) .monaco-workbench:not(.fullscreen) .activitybar:not(.right) .activity-bar-placeholder": "background: rgba(0, 0, 0, 0) !important;",
+    // ".monaco-list .monaco-list-row": "border-radius: 6px !important;", ".part.statusbar": "background-color: rgba(37, 37, 38, 0) !important;",
+    // ".monaco-workbench .part.panel": "border-radius: 6px !important; margin-top: 10px !important; height: calc(100% - 10px) !important; width: calc(100% - 10px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;",
+    // "#workbench.parts.editor > .content": "border-bottom-left-radius: 6px !important;", ".monaco-workbench .part.panel.bottom .composite.title": "border-top-color: rgba(128, 128, 128, 0) !important;",
+    // ".parts.editor > div.content > div.grid-view-container > div > div > div > div.split-view-container > div": "width: calc(100% - 10px) !important;",
+    // ".part.editor.has-watermark": "height: calc(100% - 0px) !important; margin-top: 0px !important;margin-left: 0px !important; border-radius: 0px !important; width: calc(100% - 0px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;"
+  },
+  "terminal.integrated.gpuAcceleration": "off",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  // "customizeUI.titleBar": "inline",
+  "customizeUI.moveStatusbar": true,
+  "vscode_vibrancy.theme": "Dark (Only Subbar)",
+  // "vscode_vibrancy.theme": "Light (Only Subbar)",
+  "vscode_vibrancy.opacity": 0.1,
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true
+  },
+  "git.autofetch": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Atom One Light",
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)"
 }
