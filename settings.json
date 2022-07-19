@@ -24,6 +24,7 @@
     }
   ],
   "vim.easymotion": true,
+  "vim.surround": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
@@ -93,7 +94,7 @@
     // ".part.editor.has-watermark": "height: calc(100% - 0px) !important; margin-top: 0px !important;margin-left: 0px !important; border-radius: 0px !important; width: calc(100% - 0px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;"
   },
   "terminal.integrated.gpuAcceleration": "off",
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Atom One Light",
   // "customizeUI.titleBar": "inline",
   "customizeUI.moveStatusbar": true,
   "vscode_vibrancy.theme": "Dark (Only Subbar)",
@@ -109,5 +110,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Atom One Light",
-  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)"
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0.25
 }
