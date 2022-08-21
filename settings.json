@@ -1,28 +1,53 @@
 {
+  // General
+  "editor.lineNumbers": "relative",
+  "editor.fontSize": 13,
+  "editor.letterSpacing": 1.1,
+  "editor.lineHeight": 28,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrains Mono, monospace",
+  "files.autoSave": "onWindowChange",
+  "workbench.editor.untitled.hint": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "terminal.external.osxExec": "iTerm.app",
+
+  // Theme & customization
+  "window.commandCenter": true,
+
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Monochrome Icons",
-  "workbench.colorCustomizations": {
-    // "titleBar.activeBackground": "#1B2229",
-    // "titleBar.inactiveBackground": "#1B2229",
-    // "titleBar.activeBackground": "#191919",
-    // "titleBar.inactiveBackground": "#191919",
-  },
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
   "vscode_custom_css.imports": [
     "file:///Users/kyloren/Library/Application Support/Code/User/vscode.css"
   ],
-  "terminal.external.osxExec": "iTerm.app",
   "workbench.editor.showIcons": false,
-  //VIM CONFIG
+  "terminal.integrated.gpuAcceleration": "off",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Gruvbox Light Medium",
+  "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0.35,
+  // "vscode_vibrancy.theme": "Dark (Only Subbar)",
+  // "vscode_vibrancy.theme": "Light (Only Subbar)",
+  // "vscode_vibrancy.opacity": 0.1,
+  // "customizeUI.moveStatusbar": true,
+  // "customizeUI.stylesheet": {
+  // "body.inline-title-bar .monaco-workbench:not(.fullscreen) .sidebar .composite.title": "background: rgba(0, 0, 0, 0) !important;",
+  // ".statusbar-item.left.has-background-color.first-visible-item": "background-color: rgba(37, 37, 38, 0) !important;",
+  // ".monaco-workbench .part > .title": "background: rgba(0, 0, 0, 0) !important;",
+  // "body.inline-title-bar:not(.activity-bar-at-bottom) .monaco-workbench:not(.fullscreen) .activitybar:not(.right) .activity-bar-placeholder": "background: rgba(0, 0, 0, 0) !important;",
+  // ".monaco-list .monaco-list-row": "border-radius: 6px !important;", ".part.statusbar": "background-color: rgba(37, 37, 38, 0) !important;",
+  // ".monaco-workbench .part.panel": "border-radius: 6px !important; margin-top: 10px !important; height: calc(100% - 10px) !important; width: calc(100% - 10px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;",
+  // "#workbench.parts.editor > .content": "border-bottom-left-radius: 6px !important;", ".monaco-workbench .part.panel.bottom .composite.title": "border-top-color: rgba(128, 128, 128, 0) !important;",
+  // ".parts.editor > div.content > div.grid-view-container > div > div > div > div.split-view-container > div": "width: calc(100% - 10px) !important;",
+  // ".part.editor.has-watermark": "height: calc(100% - 0px) !important; margin-top: 0px !important;margin-left: 0px !important; border-radius: 0px !important; width: calc(100% - 0px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;"
+  // },
 
-  "vim.cursorStylePerMode.insert": "line-thin",
-  "vim.cursorStylePerMode.replace": "underline-thin",
-  "vim.easymotionMarkerBackgroundColor": "#EEB32D",
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["p"],
-      "after": ["p", "gv", "y", "<Esc>"]
-    }
-  ],
+  // Vim
+
   "vim.easymotion": true,
   "vim.surround": true,
   "vim.incsearch": true,
@@ -30,6 +55,24 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
+  "vim.cursorStylePerMode.insert": "line-thin",
+  "vim.cursorStylePerMode.replace": "underline-thin",
+  "vim.easymotionMarkerBackgroundColor": "#EEB32D",
+  // Key Bindings
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["p"],
+      "after": ["p", "gv", "y", "<Esc>"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
@@ -38,24 +81,31 @@
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
+      "before": ["?"],
+      "after": ["<leader>", "<leader>"]
     },
     {
-      "before": ["<Tab>"],
-      "after": ["i", "<C-t>", "<Esc>"]
+      "before": ["@"],
+      "commands": ["workbench.action.gotoSymbol"],
+      "silent": true
     },
     {
-      "before": ["<leader>", "<S-Tab>"],
-      "after": ["i", "<C-d>", "<Esc>"]
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
     },
     {
       "before": ["<leader>", "w"],
-      "commands": [":w"]
+      "commands": [":w"],
+      "silent": true
     },
     {
       "before": ["<leader>", "q"],
-      "commands": [":q"]
+      "commands": [":q"],
+      "silent": true
     },
     {
       "before": ["<leader>", "o"],
@@ -70,36 +120,7 @@
     "<C-a>": false,
     "<C-f>": false
   },
-  "editor.lineNumbers": "relative",
-  "editor.fontSize": 13,
-  "editor.letterSpacing": 1,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "JetBrains Mono, monospace",
-  "files.autoSave": "onWindowChange",
-  "workbench.editor.untitled.hint": "hidden",
-  "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
 
-  "customizeUI.stylesheet": {
-    // "body.inline-title-bar .monaco-workbench:not(.fullscreen) .sidebar .composite.title": "background: rgba(0, 0, 0, 0) !important;",
-    // ".statusbar-item.left.has-background-color.first-visible-item": "background-color: rgba(37, 37, 38, 0) !important;",
-    // ".monaco-workbench .part > .title": "background: rgba(0, 0, 0, 0) !important;",
-    // "body.inline-title-bar:not(.activity-bar-at-bottom) .monaco-workbench:not(.fullscreen) .activitybar:not(.right) .activity-bar-placeholder": "background: rgba(0, 0, 0, 0) !important;",
-    // ".monaco-list .monaco-list-row": "border-radius: 6px !important;", ".part.statusbar": "background-color: rgba(37, 37, 38, 0) !important;",
-    // ".monaco-workbench .part.panel": "border-radius: 6px !important; margin-top: 10px !important; height: calc(100% - 10px) !important; width: calc(100% - 10px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;",
-    // "#workbench.parts.editor > .content": "border-bottom-left-radius: 6px !important;", ".monaco-workbench .part.panel.bottom .composite.title": "border-top-color: rgba(128, 128, 128, 0) !important;",
-    // ".parts.editor > div.content > div.grid-view-container > div > div > div > div.split-view-container > div": "width: calc(100% - 10px) !important;",
-    // ".part.editor.has-watermark": "height: calc(100% - 0px) !important; margin-top: 0px !important;margin-left: 0px !important; border-radius: 0px !important; width: calc(100% - 0px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;"
-  },
-  "terminal.integrated.gpuAcceleration": "off",
-  "workbench.colorTheme": "Gruvbox Light Hard",
-  // "customizeUI.titleBar": "inline",
-  "customizeUI.moveStatusbar": true,
-  "vscode_vibrancy.theme": "Dark (Only Subbar)",
-  // "vscode_vibrancy.theme": "Light (Only Subbar)",
-  "vscode_vibrancy.opacity": 0.1,
   "files.associations": {
     "*.vue": "vue"
   },
@@ -108,9 +129,6 @@
   },
   "git.autofetch": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Gruvbox Light Hard",
-  "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
-  "editor.formatOnSave": true,
-  "window.zoomLevel": 0.5
+  "workbench.sideBar.location": "right",
+  "githubPullRequests.pullBranch": "never"
 }
