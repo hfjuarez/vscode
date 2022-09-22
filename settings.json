@@ -14,9 +14,6 @@
   "breadcrumbs.enabled": false,
   "terminal.external.osxExec": "iTerm.app",
 
-  // Theme & customization
-  "window.commandCenter": true,
-
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Monochrome Icons",
   "window.titleBarStyle": "custom",
@@ -26,10 +23,8 @@
   "workbench.editor.showIcons": false,
   "terminal.integrated.gpuAcceleration": "off",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Gruvbox Light Medium",
+  "workbench.preferredLightColorTheme": "Gruvbox Light Soft",
   "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
-  "editor.formatOnSave": true,
-  "window.zoomLevel": 0.35,
   // "vscode_vibrancy.theme": "Dark (Only Subbar)",
   // "vscode_vibrancy.theme": "Light (Only Subbar)",
   // "vscode_vibrancy.opacity": 0.1,
@@ -54,10 +49,29 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
+  "vim.sneak": true,
+
   "vim.leader": "<space>",
   "vim.cursorStylePerMode.insert": "line-thin",
   "vim.cursorStylePerMode.replace": "underline-thin",
   "vim.easymotionMarkerBackgroundColor": "#EEB32D",
+
+  "vim.statusBarColorControl": true,
+  // Light Mode
+  "vim.statusBarColors.normal": ["#f2e5bc", "#a89984"],
+  // Dark Mode
+  // "vim.statusBarColors.normal": ["#1d2021", "#a89984"],
+  "vim.statusBarColors.insert": ["#83a598", "#1d2021"],
+  "vim.statusBarColors.visual": ["#fe8019", "#1d2021"],
+  "vim.statusbarcolors.visualline": ["#fe8019", "#1d2021"],
+  "vim.statusbarcolors.visualblock": ["#fe8019", "#1d2021"],
+  "vim.statusBarColors.replace": ["#8ec07c", "#1d2021"],
+  "vim.statusBarColors.commandlineinprogress": ["#007ACC", "#1d2021"],
+  "vim.statusBarColors.searchinprogressmode": ["#007ACC", "#1d2021"],
+  "vim.statusBarColors.easymotionmode": ["#fabd2f", "#1d2021"],
+  "vim.statusBarColors.easymotioninputmode": ["#fabd2f", "#1d2021"],
+  "vim.statusBarColors.surroundinputmode": ["#fb4934", "#1d2021"],
+
   // Key Bindings
   "vim.visualModeKeyBindings": [
     {
@@ -71,6 +85,10 @@
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
     }
   ],
   "vim.insertModeKeyBindings": [
@@ -130,5 +148,14 @@
   "git.autofetch": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.sideBar.location": "right",
-  "githubPullRequests.pullBranch": "never"
+  "githubPullRequests.pullBranch": "never",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#f2e5bc",
+    "statusBar.noFolderBackground": "#f2e5bc",
+    "statusBar.debuggingBackground": "#f2e5bc",
+    "statusBar.foreground": "#a89984",
+    "statusBar.debuggingForeground": "#a89984"
+  },
+  "window.zoomLevel": 0.75,
+  "editor.formatOnSave": true
 }
