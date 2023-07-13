@@ -1,161 +1,34 @@
 {
-  // General
+  "workbench.iconTheme": "material-icon-theme",
   "editor.lineNumbers": "relative",
-  "editor.fontSize": 13,
-  "editor.letterSpacing": 1.1,
-  "editor.lineHeight": 28,
+  "editor.fontSize": 14,
+  "editor.letterSpacing": 1,
+  "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "editor.fontFamily": "JetBrains Mono, monospace",
-  "files.autoSave": "onWindowChange",
   "workbench.editor.untitled.hint": "hidden",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
   "terminal.external.osxExec": "iTerm.app",
-
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Monochrome Icons",
-  "window.titleBarStyle": "custom",
-  "vscode_custom_css.imports": [
-    "file:///Users/kyloren/Library/Application Support/Code/User/vscode.css"
-  ],
-  "workbench.editor.showIcons": false,
-  "terminal.integrated.gpuAcceleration": "off",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Gruvbox Light Soft",
-  "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
-  // "vscode_vibrancy.theme": "Dark (Only Subbar)",
-  // "vscode_vibrancy.theme": "Light (Only Subbar)",
-  // "vscode_vibrancy.opacity": 0.1,
-  // "customizeUI.moveStatusbar": true,
-  // "customizeUI.stylesheet": {
-  // "body.inline-title-bar .monaco-workbench:not(.fullscreen) .sidebar .composite.title": "background: rgba(0, 0, 0, 0) !important;",
-  // ".statusbar-item.left.has-background-color.first-visible-item": "background-color: rgba(37, 37, 38, 0) !important;",
-  // ".monaco-workbench .part > .title": "background: rgba(0, 0, 0, 0) !important;",
-  // "body.inline-title-bar:not(.activity-bar-at-bottom) .monaco-workbench:not(.fullscreen) .activitybar:not(.right) .activity-bar-placeholder": "background: rgba(0, 0, 0, 0) !important;",
-  // ".monaco-list .monaco-list-row": "border-radius: 6px !important;", ".part.statusbar": "background-color: rgba(37, 37, 38, 0) !important;",
-  // ".monaco-workbench .part.panel": "border-radius: 6px !important; margin-top: 10px !important; height: calc(100% - 10px) !important; width: calc(100% - 10px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;",
-  // "#workbench.parts.editor > .content": "border-bottom-left-radius: 6px !important;", ".monaco-workbench .part.panel.bottom .composite.title": "border-top-color: rgba(128, 128, 128, 0) !important;",
-  // ".parts.editor > div.content > div.grid-view-container > div > div > div > div.split-view-container > div": "width: calc(100% - 10px) !important;",
-  // ".part.editor.has-watermark": "height: calc(100% - 0px) !important; margin-top: 0px !important;margin-left: 0px !important; border-radius: 0px !important; width: calc(100% - 0px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;"
-  // },
-
-  // Vim
-
-  "vim.easymotion": true,
-  "vim.surround": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.sneak": true,
-
-  "vim.leader": "<space>",
-  "vim.cursorStylePerMode.insert": "line-thin",
-  "vim.cursorStylePerMode.replace": "underline-thin",
-  "vim.easymotionMarkerBackgroundColor": "#EEB32D",
-
-  "vim.statusBarColorControl": true,
-  // Light Mode
-  "vim.statusBarColors.normal": ["#f2e5bc", "#a89984"],
-  // Dark Mode
-  // "vim.statusBarColors.normal": ["#1d2021", "#a89984"],
-  "vim.statusBarColors.insert": ["#83a598", "#1d2021"],
-  "vim.statusBarColors.visual": ["#fe8019", "#1d2021"],
-  "vim.statusbarcolors.visualline": ["#fe8019", "#1d2021"],
-  "vim.statusbarcolors.visualblock": ["#fe8019", "#1d2021"],
-  "vim.statusBarColors.replace": ["#8ec07c", "#1d2021"],
-  "vim.statusBarColors.commandlineinprogress": ["#007ACC", "#1d2021"],
-  "vim.statusBarColors.searchinprogressmode": ["#007ACC", "#1d2021"],
-  "vim.statusBarColors.easymotionmode": ["#fabd2f", "#1d2021"],
-  "vim.statusBarColors.easymotioninputmode": ["#fabd2f", "#1d2021"],
-  "vim.statusBarColors.surroundinputmode": ["#fb4934", "#1d2021"],
-
-  // Key Bindings
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["p"],
-      "after": ["p", "gv", "y", "<Esc>"]
-    },
-    {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
-    },
-    {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
-    },
-    {
-      "before": ["p"],
-      "after": ["p", "g", "v", "y"]
-    }
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["?"],
-      "after": ["<leader>", "<leader>"]
-    },
-    {
-      "before": ["@"],
-      "commands": ["workbench.action.gotoSymbol"],
-      "silent": true
-    },
-    {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
-    },
-    {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
-    },
-    {
-      "before": ["<leader>", "w"],
-      "commands": [":w"],
-      "silent": true
-    },
-    {
-      "before": ["<leader>", "q"],
-      "commands": [":q"],
-      "silent": true
-    },
-    {
-      "before": ["<leader>", "o"],
-      "after": ["o", "<Esc>"]
-    },
-    {
-      "before": ["<leader>", "O"],
-      "after": ["O", "<Esc>"]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
+  "workbench.colorTheme": "GitHub Dark",
+  "window.zoomLevel": 1,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
-
-  "files.associations": {
-    "*.vue": "vue"
-  },
-  "gitlens.advanced.messages": {
-    "suppressFileNotUnderSourceControlWarning": true
-  },
-  "git.autofetch": true,
+  "eslint.validate": ["javascript"],
+  "git.confirmSync": false,
+  "editor.formatOnPaste": false, 
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true, 
+  "editor.formatOnSaveMode": "file",
+  "files.autoSave": "onWindowChange",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.sideBar.location": "right",
-  "githubPullRequests.pullBranch": "never",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#f2e5bc",
-    "statusBar.noFolderBackground": "#f2e5bc",
-    "statusBar.debuggingBackground": "#f2e5bc",
-    "statusBar.foreground": "#a89984",
-    "statusBar.debuggingForeground": "#a89984"
-  },
-  "window.zoomLevel": 0.75,
-  "editor.formatOnSave": true
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
