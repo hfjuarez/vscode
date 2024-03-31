@@ -29,7 +29,7 @@
   },
   // "editor.tabSize": 2,
   "workbench.editor.empty.hint": "hidden",
-  // "window.zoomLevel": 1,
+  "window.zoomLevel": 0.75,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.formatOnSave": true,
   "workbench.sideBar.location": "right",
