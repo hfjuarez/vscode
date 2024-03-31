@@ -1,34 +1,61 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Monochrome Icons",
   "editor.lineNumbers": "relative",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.letterSpacing": 1,
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "editor.fontFamily": "JetBrains Mono, monospace",
-  "workbench.editor.untitled.hint": "hidden",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
   "terminal.external.osxExec": "iTerm.app",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
-  "workbench.preferredLightColorTheme": "GitHub Light Default",
-  "workbench.colorTheme": "GitHub Dark",
-  "window.zoomLevel": 1,
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.preferredLightColorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["javascript"],
   "git.confirmSync": false,
-  "editor.formatOnPaste": false, 
+  "editor.formatOnPaste": false,
   "editor.formatOnType": false,
-  "editor.formatOnSave": true, 
   "editor.formatOnSaveMode": "file",
   "files.autoSave": "onWindowChange",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "editor.tabSize": 2,
+  "workbench.editor.empty.hint": "hidden",
+  // "window.zoomLevel": 1,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "workbench.sideBar.location": "right",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
   }
 }
