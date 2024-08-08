@@ -1,5 +1,5 @@
 {
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Monochrome Icons",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "editor.lineNumbers": "relative",
   "editor.fontSize": 13,
   "editor.letterSpacing": 1,
@@ -11,9 +11,9 @@
   "editor.minimap.enabled": false,
   "terminal.external.osxExec": "iTerm.app",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
-  "workbench.preferredLightColorTheme": "Monokai Pro (Filter Spectrum)",
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  // "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  // "workbench.preferredLightColorTheme": "Monokai Pro (Filter Spectrum)",
+  // "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
@@ -27,9 +27,8 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "editor.tabSize": 2,
   "workbench.editor.empty.hint": "hidden",
-  "window.zoomLevel": 0.75,
+  "window.zoomLevel": 0.5,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.formatOnSave": true,
   "workbench.sideBar.location": "right",
@@ -49,6 +48,10 @@
     {
       "before": ["<leader>", "w"],
       "commands": [":w"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
     }
   ],
   "vim.handleKeys": {
@@ -57,5 +60,9 @@
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  }
+  },
+  "workbench.preferredLightColorTheme": "GitHub Dark Default",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Spectrum)",
+  "github.copilot.editor.enableAutoCompletions": true
 }
